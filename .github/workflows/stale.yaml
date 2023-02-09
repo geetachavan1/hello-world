@@ -29,7 +29,7 @@ jobs:
         stale-issue-label: 'stale'
         exempt-issue-labels: awaiting-maintainer
         ascending: true
-        start-date: '2022-10-01T00:00:00Z' # ISO 8601
+        #start-date: '2022-10-01T00:00:00Z' # ISO 8601
         #debug-only: true
-        ACTIONS_STEP_DEBUG: true
+        #ACTIONS_STEP_DEBUG: true
         enable-statistics: true
