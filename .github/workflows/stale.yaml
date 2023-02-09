@@ -22,7 +22,7 @@ jobs:
       uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        days-before-issue-stale: 30
+        days-before-issue-stale: 1
         stale-issue-message: >
           This issue is marked as Stale due to inactivity for last 30 days. 
           Please add a comment or remove the label. To avoid being marked as "Stale" please add "awaiting-maintainer" label. Thank you for your contributions '
