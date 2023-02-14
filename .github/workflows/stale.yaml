@@ -3,7 +3,7 @@
 # You can adjust the behavior by modifying this file.
 # For more information, see:
 # https://github.com/actions/stale
-name: Mark stale issues and pull requests
+name: Mark stale 
 
 on:
   schedule:
@@ -15,10 +15,10 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
-    name: Track and close stale issues
+    name: stale issues
 
     steps:
-    - name: Track and mark stale issues
+    - name: Stale issues
       uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
