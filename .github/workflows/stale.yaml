@@ -7,7 +7,7 @@ name: Mark stale
 
 on:
   schedule:
-  - cron: '33 1 * * *'
+  - cron: '0 * * * *'
 
 jobs:
   stale:
