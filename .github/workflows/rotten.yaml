@@ -7,7 +7,7 @@ name: Mark stale issues Rotten
 
 on:
   schedule:
-  - cron: '45 * * * *'
+  - cron: '55 * * * *'
 
 jobs:
   stale:
