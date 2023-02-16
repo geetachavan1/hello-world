@@ -24,8 +24,8 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-issue-stale: 0
         stale-issue-message: >
-          Closing this inactive issue
-        only-labels: 'rotten'
+          @author, We are closing this as there is no recent activity in this issue. Please reopen if you’d like to discuss anything further.
+        only-labels: 'obsolete'
         exempt-issue-labels: awaiting-maintainer
         ascending: true
         days-before-close: 0
