@@ -8,9 +8,6 @@ name: Mark stale issues Rotten
 on:
   schedule:
   - cron: '45 * * * *'
-  push:
-     branches:
-        - main
   workflow_dispatch:
         
 
