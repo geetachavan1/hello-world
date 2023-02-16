@@ -7,7 +7,7 @@ name: Mark stale issues Rotten
 
 on:
   schedule:
-  - cron: '45 * * * *'
+  - cron: '0 1 * * *'
   workflow_dispatch:
         
 
@@ -17,22 +17,19 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       issues: write
-    name: Track and close stale issues
+    name: Track Obsolete Issues
 
     steps:
-    - name: Track stale issues and mark rotten
+    - name: Track stale issues and check if obsolete
       uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        days-before-issue-stale: 0
+        days-before-issue-stale: 30
         stale-issue-message: >
-          This issue is marked as Stale due to inactivity for last 30 days. 
-          Please add a comment or remove the label. To avoid being marked as "Stale" please add "awaiting-maintainer" label. Thank you for your contributions '
-        stale-issue-label: 'rotten'
+          This issue is marked as obsolete due to inactivity for last 60 days. 
+          To avoid being marked as "Obsolete" please add a comment or add "awaiting-maintainer" label. Thank you for your contributions '
+        stale-issue-label: 'Obsolete'
         only-labels: 'stale'
         exempt-issue-labels: awaiting-maintainer
         ascending: true
-        #start-date: '2022-10-01T00:00:00Z' # ISO 8601
-        #debug-only: true
-        #ACTIONS_STEP_DEBUG: true
         enable-statistics: true
