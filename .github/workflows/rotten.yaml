@@ -3,7 +3,7 @@
 # You can adjust the behavior by modifying this file.
 # For more information, see:
 # https://github.com/actions/stale
-name: Mark stale issues Rotten
+name: Mark stale issues obsolete
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
         days-before-issue-stale: 0
         stale-issue-message: >
           This issue is marked as obsolete due to inactivity for last 60 days. 
-          To avoid being marked as "Obsolete" please add a comment or add "awaiting-maintainer" label. Thank you for your contributions '
+          To avoid being marked as "Obsolete" please add a comment or add "awaiting-maintainer" label. Thank you for your contributions
         stale-issue-label: 'Obsolete'
         only-labels: 'stale'
         exempt-issue-labels: awaiting-maintainer
