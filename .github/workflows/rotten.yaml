@@ -31,5 +31,6 @@ jobs:
         stale-issue-label: 'Obsolete'
         only-labels: 'stale'
         exempt-issue-labels: awaiting-maintainer
+        remove-stale-when-updated: true
         ascending: true
         enable-statistics: true
