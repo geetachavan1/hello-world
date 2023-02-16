@@ -8,7 +8,7 @@ name: Close Old
 on:
   workflow_dispatch:
   schedule:
-  - cron: '55 * * * *'
+  - cron: '0 2 * * *'
 
 jobs:
   stale:
@@ -22,7 +22,7 @@ jobs:
     - uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        days-before-issue-stale: 0
+        days-before-issue-stale: 3
         stale-issue-message: >
           @author, We are closing this as there is no activity in this issue for last 90 days. Please reopen if you’d like to discuss anything further.
         only-labels: 'obsolete'
