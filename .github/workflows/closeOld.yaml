@@ -28,7 +28,7 @@ jobs:
         exempt-issue-labels: awaiting-maintainer
         ascending: true
         days-before-close: 0
-        close-issue-reason: "due to inactivity"        
+        close-issue-reason: "closed this issue due to inactivity"        
         #start-date: '2022-10-01T00:00:00Z' # ISO 8601
         #debug-only: true
         #ACTIONS_STEP_DEBUG: true
