@@ -24,7 +24,7 @@ jobs:
       uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        days-before-issue-stale: 30
+        days-before-issue-stale: 0
         stale-issue-message: >
           This issue is marked as obsolete due to inactivity for last 60 days. 
           To avoid being marked as "Obsolete" please add a comment or add "awaiting-maintainer" label. Thank you for your contributions '
