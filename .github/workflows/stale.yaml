@@ -8,7 +8,7 @@ name: Mark stale
 on:
   workflow_dispatch:
   schedule:
-  - cron: '0 * * * *'
+  - cron: '0 0 * * *'
 
 jobs:
   stale:
@@ -26,9 +26,9 @@ jobs:
         days-before-issue-stale: 0
         stale-issue-message: >
           This issue is marked as Stale due to inactivity for last 30 days. 
-          Please add a comment or remove the label. To avoid being marked as "Stale" please add "awaiting-maintainer" label. Thank you for your contributions '
+          To avoid being marked as "Stale" please add "awaiting-maintainer" label or comment. Thank you for your contributions '
         stale-issue-label: 'stale'
-        exempt-issue-labels: awaiting-maintainer, rotten, stale
+        exempt-issue-labels: awaiting-maintainer, obsolete, stale
         ascending: true
         #start-date: '2022-10-01T00:00:00Z' # ISO 8601
         #debug-only: true
