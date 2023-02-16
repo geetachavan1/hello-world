@@ -6,6 +6,7 @@
 name: Mark stale 
 
 on:
+  workflow_dispatch:
   schedule:
   - cron: '0 * * * *'
 
