@@ -7,7 +7,7 @@ name: Mark stale issues obsolete
 
 on:
   schedule:
-  - cron: '50 18 * * *'
+  - cron: '50 22 * * *'
   workflow_dispatch:
         
 
