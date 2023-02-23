@@ -8,7 +8,7 @@ name: Close Old
 on:
   workflow_dispatch:
   schedule:
-  - cron: '45 2 * * *'
+  - cron: '45 18 * * *'
 
 jobs:
   stale:
