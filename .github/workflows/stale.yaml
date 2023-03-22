@@ -34,4 +34,4 @@ jobs:
         #debug-only: true
         #ACTIONS_STEP_DEBUG: true
         enable-statistics: true
-        operations-per-run: 5
+        operations-per-run: 6
