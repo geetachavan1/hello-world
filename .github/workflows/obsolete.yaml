@@ -26,7 +26,7 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-issue-stale: 29
         stale-issue-message: >
-          @$${{ github.event.issue.user.login }}, The issue is marked as obsolete due to inactivity for last 60 days. 
+          @github.event.issue.user.login, The issue is marked as obsolete due to inactivity for last 60 days. 
           To avoid being marked as "Obsolete" please add a comment or add "awaiting-maintainer" label. Thank you for your contributions
         stale-issue-label: 'obsolete'
         only-labels: 'stale'
