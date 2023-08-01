@@ -27,7 +27,7 @@ jobs:
         days-before-issue-stale: 0
         tag-author: true
         stale-issue-message: >
-          The issue is marked as obsolete due to inactivity for last 60 days. 
+          ${{ github.event.issue.user.login }} issue is marked as obsolete due to inactivity for last 60 days. 
           To avoid being marked as "Obsolete" please add a comment or add "awaiting-maintainer" label. Thank you for your contributions
         stale-issue-label: 'obsolete'
         only-labels: 'stale'
